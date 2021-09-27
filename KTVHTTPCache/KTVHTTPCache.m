@@ -74,6 +74,11 @@
     return [[KTVHCDataStorage storage] cacheItemWithURL:URL];
 }
 
++ (void)cacheCacheItemWithURL:(NSURL *)URL videoPath:(NSString *)path
+{
+    [[KTVHCDataStorage storage] cacheCacheItemWithURL:URL videoPath:path];
+}
+
 + (NSArray<KTVHCDataCacheItem *> *)cacheAllCacheItems
 {
     return [[KTVHCDataStorage storage] allCacheItems];
